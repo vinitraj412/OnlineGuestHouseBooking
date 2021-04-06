@@ -1,0 +1,406 @@
+Index: static/css/calendar.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/static/css/calendar.css b/static/css/calendar.css
+--- a/static/css/calendar.css	(revision 09d14ee8403376c07205d3008cdf1dfe70f5dc0d)
++++ b/static/css/calendar.css	(date 1617043021147)
+@@ -1,0 +1,261 @@
++[type="date"] {
++    background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 97% 50% no-repeat;
++}
++
++[type="date"]::-webkit-inner-spin-button {
++    display: none;
++}
++
++[type="date"]::-webkit-calendar-picker-indicator {
++    opacity: 0;
++}
++
++* {
++    margin: 0;
++    padding: 0
++}
++
++
++/* custom styles */
++
++body {
++    margin: 0;
++    padding: 0;
++    background: #e5e5e5;
++    font: 13px/1.4 Geneva, 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
++}
++
++.backgroundimage {
++    background-size: 100%;
++}
++
++label {
++    /*border: 1px solid #ccc;*/
++    display: block;
++}
++
++.checkin {
++    /*    !*display:flex;*!*/
++    /*    flex-direction: column;*/
++    border: 1px black;
++    background-color: cornflowerblue;
++    text-align: center;
++    padding-top: 5px;
++    padding-right: 100px;
++    padding-bottom: 10px;
++    padding-left: 10px;
++}
++
++.space {
++    padding-bottom: 50px;
++    /*background-color: #fff;*/
++}
++
++.flex-container {
++    margin: 10em;
++    /*padding: 4em;*/
++    display: flex;
++    align-items: center;
++    flex-direction: row;
++    justify-content: center;
++    background-color: cornflowerblue;
++}
++
++.nav {
++    width: 50%;
++    margin: auto;
++}
++
++.checkout {
++    border: 1px black;
++    background-color: cornflowerblue;
++    text-align: center;
++    padding-top: 5px;
++    padding-right: 3px;
++    padding-bottom: 5px;
++    padding-left: 3px;
++}
++
++#hello:hover {
++    letter-spacing: 0.8em;
++    background-color: whitesmoke;
++}
++
++#hello {
++    color: black;
++}
++
++button {
++    height: 4em;
++    /*width: 10%;*/
++    padding: 1.5em 1.5em;
++    margin: 1em auto;
++    background-color: #FEB1C0;
++    border: none;
++    border-radius: 3px;
++    text-transform: uppercase;
++    letter-spacing: 0.5em;
++    transition: all 0.2s cubic-bezier(.4, 0, .2, 1);
++}
++
++input {
++    border: 1px solid #290707;
++    border-radius: 5px;
++    background-color: #fff;
++    padding: 3px 5px;
++    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.1);
++    width: 190px;
++}
++
++
++body {
++    background-size: auto;
++  background: url("https://images.unsplash.com/photo-1616428846121-864f3cbf8cac?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60")  no-repeat center fixed;
++  -webkit-background-size: cover;
++  -moz-background-size: cover;
++  -o-background-size: cover;
++  background-size: cover;
++
++}
++
++ul {
++    display: flex;
++    list-style-type: none;
++    /*margin: 0 100px;*/
++    font: 17px helvetica;
++    text-align: center;
++}
++
++.nav li {
++    flex: 1;
++    border-style: solid;
++    height: 65px;
++    background: #1a1a1a;
++}
++
++.nav a {
++    position: relative;
++    top: 23px;
++    text-decoration: none;
++    color: white;
++}
++
++.nav li:hover {
++    flex: 1.1;
++    transition: all .3s ease;
++}
++
++.footer-widget p {
++    margin-bottom: 27px;
++}
++
++.dk-footer {
++    width: 100%;
++    background-color: #151414;
++    position: absolute;
++    bottom: 0;
++    z-index: 2;
++}
++
++.logo {
++    margin-top: 1rem;
++    /*margin: 2rem;*/
++}
++
++.container {
++    display: flex;
++    justify-content: center;
++}
++
++.row {
++    display: flex;
++}
++
++.info {
++    display: flex;
++}
++
++.contact-us {
++    z-index: 2;
++    margin: 0 2rem;
++    display: -webkit-box;
++    display: -webkit-flex;
++    display: -moz-box;
++    display: -ms-flexbox;
++    display: flex;
++    -webkit-box-align: center;
++    -webkit-align-items: center;
++    -moz-box-align: center;
++    -ms-flex-align: center;
++    align-items: center;
++}
++
++.contact-icon {
++    margin: 0 1.2rem;
++}
++
++.contact-icon i {
++    font-size: 36px;
++    top: -5px;
++    color: white;
++}
++
++.contact-info {
++    display: flex;
++    flex-direction: column;
++    color: #fff;
++    align-items: start;
++}
++
++.contact-info h3 {
++    font-size: 20px;
++    color: #fff;
++    margin-bottom: 0;
++}
++
++.contact-info p {
++    font-size: 15px;
++    color: #fff;
++    margin-bottom: 0;
++}
++
++.copyright {
++    justify-content: space-evenly;
++    display: flex;
++    padding: 28px 0;
++    background-color: #202020;
++}
++
++.copyright span,
++.copyright a {
++    color: #878787;
++    -webkit-transition: all 0.3s linear;
++    -o-transition: all 0.3s linear;
++    transition: all 0.3s linear;
++}
++
++.copyright a:hover {
++    color: #007bff;
++}
++
++.copyright-menu ul {
++    text-align: right;
++    margin: 0;
++}
++
++.copyright-menu li {
++    display: inline-block;
++    padding-left: 20px;
++}
++
++.img {
++    /*width: 30%;*/
++    color: white;
++    /*height: 30%;*/
++}
++
++.backgroundimage {
++    float: start;
++    height: 100vh;
++    width: 100vw;
++}
+\ No newline at end of file
+Index: templates/calender.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>Title</title>\n    <link rel=\"stylesheet\" href=\"{{ url_for('static',filename='/css/calender.css') }}\">\n</head>\n<body>\n{#<h1>PURE CSS DATE PICKER</h1>#}\n\n<div class=\"nav\">\n    <ul class=\"navigation\">\n      <li><a href=\"\">Book Now</a></li>\n      <li><a href=\"\">Your Booking</a></li>\n    </ul>\n</div>\n{#<form action=\"/viewrooms\" method=\"POST\">#}\n<div class=\"flex-container\">\n\n<div class=\"checkin\">\n<label for=\"checkintime\">Check-In Time</label>\n<input type=\"date\" name=\"checkintime\" id=\"checkintime\">\n</div>\n<div class=\"space\">\n\n</div>\n<div class=\"checkout\">\n<label for=\"checkouttime\">Check-Out Time</label>\n<input type=\"date\" name=\"checkouttime\" id=\"checkouttime\">\n</div>\n\n   <button id=\"hello\" type=\"submit\">Search</button>\n\n    </div>\n{#</form>#}\n\n\n\n</body>\n\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/templates/calender.html b/templates/calender.html
+--- a/templates/calender.html	(revision 09d14ee8403376c07205d3008cdf1dfe70f5dc0d)
++++ b/templates/calender.html	(date 1617042355926)
+@@ -1,40 +1,99 @@
+ <!DOCTYPE html>
+ <html lang="en">
++
+ <head>
+     <meta charset="UTF-8">
+     <title>Title</title>
+-    <link rel="stylesheet" href="{{ url_for('static',filename='/css/calender.css') }}">
++    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
++    <link rel="stylesheet" href="{{ url_for('static',filename='/css/calendar.css') }}">
+ </head>
++
+ <body>
+-{#<h1>PURE CSS DATE PICKER</h1>#}
+-
+-<div class="nav">
+-    <ul class="navigation">
+-      <li><a href="">Book Now</a></li>
+-      <li><a href="">Your Booking</a></li>
+-    </ul>
+-</div>
+-{#<form action="/viewrooms" method="POST">#}
+-<div class="flex-container">
++    {#
++    <h1>PURE CSS DATE PICKER</h1>#}
++{#    <img class="backgroundimage" src="https://images.unsplash.com/photo-1616428846121-864f3cbf8cac?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">#}
++    <div class="nav">
++        <ul class="navigation">
++            <li><a href="">Book Now</a></li>
++            <li><a href="">Your Booking</a></li>
++        </ul>
++    </div>
++    {#
++    <form action="/viewrooms" method="POST">#}
++        <div class="flex-container">
+ 
+-<div class="checkin">
+-<label for="checkintime">Check-In Time</label>
+-<input type="date" name="checkintime" id="checkintime">
+-</div>
+-<div class="space">
++            <div class="checkin">
++                <label for="checkintime">Check-In Time</label>
++                <input type="date" name="checkintime" id="checkintime">
++            </div>
++            <div class="space">
+ 
+-</div>
+-<div class="checkout">
+-<label for="checkouttime">Check-Out Time</label>
+-<input type="date" name="checkouttime" id="checkouttime">
+-</div>
++            </div>
++            <div class="checkout">
++                <label for="checkouttime">Check-Out Time</label>
++                <input type="date" name="checkouttime" id="checkouttime">
++            </div>
+ 
+-   <button id="hello" type="submit">Search</button>
++            <button id="hello" type="submit">Search</button>
+ 
+-    </div>
+-{#</form>#}
++        </div>
++        {#</form>#}
+ 
+-
++    <footer id="dk-footer" class="dk-footer">
++        <div class="container">
++            <div class="logo">
++                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRORteuqtaG0f0C2WogImr0JL4ui6yAckU2-A&usqp=CAU" alt="footer_logo" class="img img-fluid">
++            </div>
++            <div class="info">
++                <div class="contact-us">
++                    <div class="contact-icon">
++                        <i class="fa fa-map-o" aria-hidden="true"></i>
++                    </div>
++                    <div class="contact-info">
++                        <h3>Contact: </h3>
++                        <p>Technology Guest House</p>
++                        <p>IIT Kharagpur</p>
++                        <p>Kharagpur, 721302</p>
++                    </div>
++                </div>
++                <div class="contact-us">
++                    <div class="contact-icon">
++                        <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
++                    </div>
++                    <div class="contact-info">
++                        <h3>Phone Number: </h3>
++                        <p>+91 9756284919</p>
++                        <p>0240 2573842</p>
++                    </div>
++                </div>
++                <div class="contact-us email">
++                    <div class="contact-icon">
++                        <i class="fa fa-envelope" aria-hidden="true"></i>
++                    </div>
++                    <div class="contact-info">
++                        <h3>Email</h3>
++                        <p>oghbs@iitkgp.ac.in</p>
++                    </div>
++                </div>
++            </div>
++        </div>
++        <div class="copyright">
++            <span>Copyright © 2019, All Right Reserved Seobin</span>
++            <div class="copyright-menu">
++                <ul>
++                    <li>
++                        <a href="http://www.iitkgp.ac.in/">Home</a>
++                    </li>
++                    <li>
++                        <a href="http://www.tgh.iitkgp.ac.in/?id=randc">Terms</a>
++                    </li>
++                    <li>
++                        <a href="http://www.iitkgp.ac.in/">Contact</a>
++                    </li>
++                </ul>
++            </div>
++        </div>
++    </footer>
+ 
+ </body>
+ 

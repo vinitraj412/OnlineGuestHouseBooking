@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="oghbs" uuid="6a462aec-55f1-4f7c-af6e-7d1900bfad94">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\vinit\Desktop\Acads\Sem4\Soft_Eng\Lab\OGHBS\oghbs.db</jdbc-url>
+    </data-source>
+  </component>
+</project>
